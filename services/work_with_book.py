@@ -1,6 +1,4 @@
-book_path = 'books/book.txt'
-book: dict[int, str] = {}
-PAGE_SIZE = 1050
+from config_data.config import book_path, PAGE_SIZE, book
 
 
 def _get_part_text(text: str, start: int, size: int) -> (str, int):

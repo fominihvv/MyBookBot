@@ -1,3 +1,5 @@
+from config_data.config import MAX_BOOKMARK
+
 LEXICON: dict[str, str] = {
     'forward': '>>',
     'backward': '<<',
@@ -19,7 +21,9 @@ LEXICON: dict[str, str] = {
                     'добавить страницу в закладки - во время чтения '
                     'книги нажмите на кнопку с номером этой '
                     'страницы\n\n/continue - продолжить чтение',
-    'cancel_text': '/continue - продолжить чтение'
+    'cancel_text': '/continue - продолжить чтение',
+    'max_bookmarks': f'Вы не можете добавить больше {MAX_BOOKMARK} закладок',
+    'added_bookmarks': 'Страница добавлена в закладки',
 }
 
 LEXICON_COMMANDS: dict[str, str] = {

@@ -6,7 +6,11 @@ from environs import Env
 
 logger = logging.getLogger(__name__)
 db_lock = asyncio.Lock()
+MAX_BOOKMARK = 20
 
+book_path = 'books/book.txt'
+book: dict[int, str] = {}
+PAGE_SIZE = 1050
 
 @dataclass
 class LocalDatabaseConfig:

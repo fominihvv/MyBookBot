@@ -3,7 +3,6 @@ import logging
 
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
-# from databases import db_methods
 from aiogram.enums import ParseMode
 
 from config_data.config import config
@@ -24,6 +23,7 @@ async def main():
         token=config.tg_bot.token,
         default=DefaultBotProperties(parse_mode=ParseMode.HTML)
     )
+
     dp = Dispatcher()
 
     # logger.info('Проверяем наличие баз данных')
