@@ -12,6 +12,7 @@ book_path = 'books/book.txt'
 book: dict[int, str] = {}
 PAGE_SIZE = 1050
 
+
 @dataclass
 class LocalDatabaseConfig:
     database: str
